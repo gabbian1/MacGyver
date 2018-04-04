@@ -1,2 +1,2 @@
 # MacGyver
-A collection of usefull tools in ABAP
+A collection of useful tools in ABAP
