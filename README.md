@@ -1,2 +1,2 @@
 # MacGyver
-A collection of useful tools in ABAP
+A dashboard for ABAP useful projects
