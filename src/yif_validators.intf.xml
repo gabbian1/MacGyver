@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>YIF_VALIDATORS</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Validadores</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_VALIDATORS</CLSNAME>
+     <CMPNAME>VALIDATE_BRAZIL_CNPJ</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Valida código CNPJ brasileiro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_VALIDATORS</CLSNAME>
+     <CMPNAME>VALIDATE_BRAZIL_CPF</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Valida código CPF brasileiro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_VALIDATORS</CLSNAME>
+     <CMPNAME>VALIDATE_EMAIL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Valida E-mail</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_VALIDATORS</CLSNAME>
+     <CMPNAME>VALIDATE_SWIFT_CODE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Valida código SWIFT</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
