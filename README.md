@@ -3,9 +3,6 @@
 
 A collection for ABAP useful programs
 
-Steps for utilization:
+All documentation can be found [here](https://github.com/pacheco7/MacGyver/wiki)
 
-- See the documentation [here](https://github.com/pacheco7/MacGyver/wiki)
-- Enjoy ;)
-
-About contributing can be read [here](https://github.com/pacheco7/MacGyver/contributing.md)
+Want to contribute? Please read the contributing file [here]
