@@ -23,4 +23,9 @@ interface YIF_VALIDATORS
       !SWIFT_CODE type BNKA-SWIFT
     returning
       value(VALID) type ABAP_BOOL .
+  class-methods VALIDATE_CHILE_RUT
+    importing
+      !RUT type C
+    returning
+      value(VALID) type ABAP_BOOL .
 endinterface.

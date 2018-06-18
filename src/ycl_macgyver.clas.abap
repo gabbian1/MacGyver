@@ -11,12 +11,12 @@ public section.
     for YIF_VALIDATORS~VALIDATE_BRAZIL_CNPJ .
   aliases VALIDATE_BRAZIL_CPF
     for YIF_VALIDATORS~VALIDATE_BRAZIL_CPF .
+  aliases VALIDATE_CHILE_RUT
+    for YIF_VALIDATORS~VALIDATE_CHILE_RUT .
   aliases VALIDATE_EMAIL
     for YIF_VALIDATORS~VALIDATE_EMAIL .
   aliases VALIDATE_SWIFT_CODE
     for YIF_VALIDATORS~VALIDATE_SWIFT_CODE .
-
-  class-methods VALIDATE_CHILE_RUT .
 protected section.
 private section.
 ENDCLASS.
@@ -24,10 +24,6 @@ ENDCLASS.
 
 
 CLASS YCL_MACGYVER IMPLEMENTATION.
-
-
-  method VALIDATE_CHILE_RUT.
-  endmethod.
 
 
   METHOD yif_validators~validate_brazil_cnpj.
@@ -41,6 +37,11 @@ CLASS YCL_MACGYVER IMPLEMENTATION.
     CALL FUNCTION 'CONVERSION_EXIT_CPFBR_INPUT' EXPORTING input = cpf.
 
     valid = SWITCH #( sy-subrc WHEN 0 THEN abap_true ELSE abap_false ).
+  ENDMETHOD.
+
+
+  METHOD yif_validators~validate_chile_rut.
+
   ENDMETHOD.
 
 

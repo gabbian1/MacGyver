@@ -29,14 +29,6 @@
      <LENGTH>126</LENGTH>
     </item>
    </TPOOL>
-   <DESCRIPTIONS>
-    <SEOCOMPOTX>
-     <CLSNAME>YCL_MACGYVER</CLSNAME>
-     <CMPNAME>VALIDATE_CHILE_RUT</CMPNAME>
-     <LANGU>P</LANGU>
-     <DESCRIPT>Valida código RUT</DESCRIPT>
-    </SEOCOMPOTX>
-   </DESCRIPTIONS>
   </asx:values>
  </asx:abap>
 </abapGit>
