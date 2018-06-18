@@ -8,4 +8,5 @@ Want to contribute? Please read the file about contributing [here](https://githu
 
 -> Informações em Português:
 Todas as documentações podem ser encontradas na wiki deste projeto, clicando [aqui](https://github.com/pacheco7/MacGyver/wiki)
+
 Quer contribuir?! Por favor, leia o arquivo de contribuição [aqui](https://github.com/pacheco7/MacGyver/blob/master/contributing_pt.md)
