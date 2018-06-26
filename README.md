@@ -3,7 +3,7 @@
 
 -> English info:
 
-All documentation can be found on the wiki, clicking [here](https://github.com/pacheco7/MacGyver/wiki)
+All documentation can be found on the wiki, clicking [here](https://github.com/pacheco7/MacGyver/wiki){:target="_blank"}
 
 Want to contribute? Please read the file about contributing [here](https://github.com/pacheco7/MacGyver/blob/master/contributing_en.md)
 
