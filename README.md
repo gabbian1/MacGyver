@@ -1,6 +1,9 @@
 <p align="center">
   <img src="https://www.shareicon.net/data/128x128/2016/10/18/845219_attach_512x512.png" alt="Clips">
-<h1 align="center">MacGyver</h1></p>
+  <h1 align="center">MacGyver</h1>
+</p>
+
+</p>
 
 -> English info:
 
