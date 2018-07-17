@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>YIF_UTILS</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Utilitários gerais</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_UTILS</CLSNAME>
+     <CMPNAME>GET_TVARV_OBJECT</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Recupera os valores de uma variável na TVARV</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

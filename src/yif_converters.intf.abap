@@ -1,7 +1,6 @@
-interface YIF_CONVERTERS
-  public .
+INTERFACE yif_converters
+  PUBLIC .
 
-
-  methods CONVERT_OTF_TO_PDF .
-  methods CONVERT_XML_TO_ABAP .
-endinterface.
+  METHODS convert_otf_to_pdf .
+  METHODS convert_xml_to_abap .
+ENDINTERFACE.
