@@ -3,5 +3,5 @@
   <h1 align="center">MacGyver</h1>
 </p>
 
--> English info [here](https://github.com/pacheco7/MacGyver/wiki)
--> Informações em Português [aqui](https://github.com/pacheco7/MacGyver/wiki)
+- English info [here](https://github.com/pacheco7/MacGyver/wiki)
+- Informações em Português [aqui](https://github.com/pacheco7/MacGyver/wiki)
