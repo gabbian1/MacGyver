@@ -1,11 +1,12 @@
-interface YIF_UTILS
-  public .
+INTERFACE yif_utils
+  PUBLIC .
 
+  TYPES: range TYPE STANDARD TABLE OF rsdsselopt WITH DEFAULT KEY.
 
-  class-methods GET_TVARV_OBJECT
-    importing
-      !TYPE type TVARVC-TYPE
-      !NAME type TVARVC-NAME
-    returning
-      value(RANGE) type OIJ_EL_RANGE_T .
-endinterface.
+  CLASS-METHODS get_tvarv_object
+    IMPORTING
+      !type        TYPE tvarvc-type
+      !name        TYPE tvarvc-name
+    RETURNING
+      VALUE(range) TYPE range .
+ENDINTERFACE.

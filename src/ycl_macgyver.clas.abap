@@ -48,22 +48,14 @@ CLASS YCL_MACGYVER IMPLEMENTATION.
 
 
   METHOD yif_utils~get_tvarv_object.
-    SELECT * FROM tvarvc INTO TABLE @DATA(tvarvc) WHERE type = @type AND name = @name.
-
-    IF sy-subrc IS INITIAL.
-
-    ENDIF.
+    SELECT sign, opti as option, low, high FROM tvarvc INTO TABLE @range WHERE type = @type AND name = @name.
   ENDMETHOD.
 
 
   METHOD yif_validators~validate_authorization.
     AUTHORITY-CHECK OBJECT object FOR USER user ID id FIELD field.
 
-    IF sy-subrc IS INITIAL.
-      valid = abap_true.
-    ELSE.
-      valid = abap_false.
-    ENDIF.
+    valid = SWITCH #( sy-subrc WHEN 0 THEN abap_true ELSE abap_false ).
   ENDMETHOD.
 
 
