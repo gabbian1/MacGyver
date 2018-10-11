@@ -19,14 +19,20 @@
     <item>
      <ID>I</ID>
      <KEY>001</KEY>
-     <ENTRY>Este e-mail não aparenta estar certo, verifique o valor de entrada</ENTRY>
+     <ENTRY>This e-mail is not valid, verify this.</ENTRY>
      <LENGTH>132</LENGTH>
     </item>
     <item>
      <ID>I</ID>
      <KEY>002</KEY>
-     <ENTRY>Este CPF não aparenta estar certo, verifique o valor de entrada</ENTRY>
+     <ENTRY>This CPF is not valid, verify this.</ENTRY>
      <LENGTH>126</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>This CNPJ is not valid, verify this.</ENTRY>
+     <LENGTH>70</LENGTH>
     </item>
    </TPOOL>
   </asx:values>

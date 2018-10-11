@@ -1,33 +1,35 @@
-class YCL_MACGYVER definition
-  public
-  final
-  create public .
+CLASS ycl_macgyver DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
 
-  interfaces YIF_VALIDATORS .
-  interfaces YIF_CONVERTERS .
-  interfaces YIF_UTILS .
-  interfaces YIF_SIMPLEBAPI .
+    INTERFACES yif_validators .
+    INTERFACES yif_converters .
+    INTERFACES yif_utils .
+    INTERFACES yif_simplebapi .
 
-  aliases CONVERT_OTF_TO_PDF
-    for YIF_CONVERTERS~CONVERT_OTF_TO_PDF .
-  aliases CONVERT_XML_TO_ABAP
-    for YIF_CONVERTERS~CONVERT_XML_TO_ABAP .
-  aliases GET_TVARV_OBJECT
-    for YIF_UTILS~GET_TVARV_OBJECT .
-  aliases VALIDATE_AUTHORIZATION
-    for YIF_VALIDATORS~VALIDATE_AUTHORIZATION .
-  aliases VALIDATE_BRAZIL_CNPJ
-    for YIF_VALIDATORS~VALIDATE_BRAZIL_CNPJ .
-  aliases VALIDATE_BRAZIL_CPF
-    for YIF_VALIDATORS~VALIDATE_BRAZIL_CPF .
-  aliases VALIDATE_CHILE_RUT
-    for YIF_VALIDATORS~VALIDATE_CHILE_RUT .
-  aliases VALIDATE_EMAIL
-    for YIF_VALIDATORS~VALIDATE_EMAIL .
-  aliases VALIDATE_SWIFT_CODE
-    for YIF_VALIDATORS~VALIDATE_SWIFT_CODE .
+    ALIASES convert_otf_to_pdf
+      FOR yif_converters~convert_otf_to_pdf .
+    ALIASES convert_xml_to_abap
+      FOR yif_converters~convert_xml_to_abap .
+    ALIASES get_tvarv_object
+      FOR yif_utils~get_tvarv_object .
+    ALIASES validate_authorization
+      FOR yif_validators~validate_authorization .
+    ALIASES validate_brazil_cnpj
+      FOR yif_validators~validate_brazil_cnpj .
+    ALIASES validate_brazil_cpf
+      FOR yif_validators~validate_brazil_cpf .
+    ALIASES validate_chile_rut
+      FOR yif_validators~validate_chile_rut .
+    ALIASES validate_email
+      FOR yif_validators~validate_email .
+    ALIASES validate_swift_code
+      FOR yif_validators~validate_swift_code .
+    ALIASES get_remain_char_count
+    FOR yif_utils~get_remain_char_count.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -44,6 +46,15 @@ CLASS YCL_MACGYVER IMPLEMENTATION.
 
   METHOD convert_xml_to_abap.
 
+  ENDMETHOD.
+
+
+  METHOD yif_utils~get_remain_char_count.
+    DESCRIBE FIELD word OUTPUT-LENGTH DATA(described_field).
+
+    DATA(filled_quantity) = strlen( word ).
+
+    remain = described_field - filled_quantity.
   ENDMETHOD.
 
 

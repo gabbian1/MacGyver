@@ -14,9 +14,15 @@
    <DESCRIPTIONS>
     <SEOCOMPOTX>
      <CLSNAME>YIF_UTILS</CLSNAME>
+     <CMPNAME>GET_REMAIN_CHAR_COUNT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get the count of remain char in striing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_UTILS</CLSNAME>
      <CMPNAME>GET_TVARV_OBJECT</CMPNAME>
      <LANGU>E</LANGU>
-     <DESCRIPT>Recupera os valores de uma variável na TVARV</DESCRIPT>
+     <DESCRIPT>Get values from one variable on TVARV table</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
      <CLSNAME>YIF_UTILS</CLSNAME>
