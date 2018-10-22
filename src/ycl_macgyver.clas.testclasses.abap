@@ -22,18 +22,19 @@ CLASS ycl_macgyver_test IMPLEMENTATION.
 
   METHOD test_cnpj_validation.
     cl_abap_unit_assert=>assert_true( act = NEW ycl_macgyver( )->validate_brazil_cnpj( '28.554.220/0001-86' )
-                                      msg = TEXT-002 ).
+                                      msg = TEXT-003 ).
   ENDMETHOD.
 
   METHOD test_swift_code_validation.
     cl_abap_unit_assert=>assert_true( act = NEW ycl_macgyver( )->validate_swift_code( bank_country = 'BR' swift_code = 'ITAUBRSP' )
-                                      msg = TEXT-002 ).
+                                      msg = TEXT-004 ).
   ENDMETHOD.
 
   METHOD test_remain_char_code.
     DATA: word TYPE char40 VALUE 'Word'.
+
     cl_abap_unit_assert=>assert_equals( act = NEW ycl_macgyver( )->get_remain_char_count( word )
                                         exp = 36
-                                        msg = TEXT-002 ).
+                                        msg = TEXT-005 ).
   ENDMETHOD.
 ENDCLASS.
