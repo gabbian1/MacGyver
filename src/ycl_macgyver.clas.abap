@@ -10,6 +10,8 @@ CLASS ycl_macgyver DEFINITION
     INTERFACES yif_utils .
     INTERFACES yif_simplebapi .
 
+    ALIASES get_eom
+     FOR yif_utils~get_eom .
     ALIASES convert_otf_to_pdf
       FOR yif_converters~convert_otf_to_pdf .
     ALIASES convert_xml_to_abap
@@ -36,7 +38,7 @@ ENDCLASS.
 
 
 
-CLASS YCL_MACGYVER IMPLEMENTATION.
+CLASS ycl_macgyver IMPLEMENTATION.
 
 
   METHOD convert_otf_to_pdf.
@@ -59,7 +61,7 @@ CLASS YCL_MACGYVER IMPLEMENTATION.
 
 
   METHOD yif_utils~get_tvarv_object.
-    SELECT sign, opti as option, low, high FROM tvarvc INTO TABLE @range WHERE type = @type AND name = @name.
+    SELECT sign, opti AS option, low, high FROM tvarvc INTO TABLE @range WHERE type = @type AND name = @name.
   ENDMETHOD.
 
 
@@ -105,4 +107,23 @@ CLASS YCL_MACGYVER IMPLEMENTATION.
 
     valid = COND #( WHEN sy-subrc IS INITIAL THEN abap_true ELSE abap_false ).
   ENDMETHOD.
+
+  METHOD yif_utils~get_eom.
+
+    CALL FUNCTION 'SLS_MISC_GET_LAST_DAY_OF_MONTH'
+      EXPORTING
+        day_in            = date
+      IMPORTING
+        last_day_of_month = eom
+      EXCEPTIONS
+        day_in_not_valid  = 1
+        OTHERS            = 2.
+    IF sy-subrc <> 0.
+      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
+                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
+    ENDIF.
+
+  ENDMETHOD.
+
+
 ENDCLASS.
