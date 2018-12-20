@@ -7,7 +7,8 @@ CLASS ycl_macgyver_test DEFINITION FINAL FOR TESTING RISK LEVEL HARMLESS DURATIO
       test_cnpj_validation       FOR TESTING,
       test_swift_code_validation FOR TESTING,
       test_remain_char_code      FOR TESTING,
-      test_get_eom               FOR TESTING.
+      test_get_eom               FOR TESTING,
+      test_spell_amount_simple   FOR TESTING.
 ENDCLASS.
 
 CLASS ycl_macgyver_test IMPLEMENTATION.
@@ -38,10 +39,11 @@ CLASS ycl_macgyver_test IMPLEMENTATION.
                                         exp = 36
                                         msg = TEXT-005 ).
   ENDMETHOD.
+
   METHOD test_get_eom.
 
     DATA: ceom TYPE sy-datum.
-    ceom = '20181031'.
+    ceom = '20181231'.
 
     cl_abap_unit_assert=>assert_equals( act = NEW ycl_macgyver( )->get_eom( sy-datum  )
                                         exp = ceom
@@ -49,4 +51,11 @@ CLASS ycl_macgyver_test IMPLEMENTATION.
 
   ENDMETHOD.
 
+  METHOD test_spell_amount_simple.
+    cl_abap_unit_assert=>assert_equals( act = NEW ycl_macgyver( )->convert_amount_to_spell_amount( amount   = '30.50'
+                                                                                                   currency = 'BRL'
+                                                                                                   language = 'P' )
+                                        exp = 'TRINTA REAIS E CINQÜENTA CENTAVOS'
+                                        msg = TEXT-007 ).
+  ENDMETHOD.
 ENDCLASS.
