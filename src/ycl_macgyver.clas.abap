@@ -121,7 +121,7 @@ CLASS ycl_macgyver IMPLEMENTATION.
                                         include_name = DATA(include_name)
                                         source_line  = DATA(source_line) ).
 
-    errmsg = |Err: { obj->get_text( ) } in program: { program_name }, include: { include_name }, line: { source_line }|.
+    errmsg = |Err: { obj->get_text( ) } in program: { program_name }{ COND #( WHEN include_name <> program_name THEN |, include: { include_name }| ) }, line: { source_line }|.
   ENDMETHOD.
 
 
