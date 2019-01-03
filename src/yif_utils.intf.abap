@@ -26,4 +26,7 @@ INTERFACE yif_utils
               rfc        TYPE rfcdest
     RETURNING VALUE(xml) TYPE j_1b_nfe_xml_content.
 
+  CLASS-METHODS get_explained_exception
+    IMPORTING obj           TYPE REF TO cx_root
+    RETURNING VALUE(errmsg) TYPE string.
 ENDINTERFACE.
