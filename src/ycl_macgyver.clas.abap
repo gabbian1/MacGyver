@@ -147,7 +147,7 @@ CLASS ycl_macgyver IMPLEMENTATION.
                                                                      WHEN '2' THEN 'OUTB' ) )
                                     iv_doctype   = CONV #( SWITCH #( xml_key-model
                                                                      WHEN '55' THEN 'NFE'
-                                                                     WHEN '57' THEN 'CTE') ) ).
+                                                                     WHEN '57' THEN 'CTE' ) ) ).
 
     xml = xml_download->get_xml_content( ).
   ENDMETHOD.
