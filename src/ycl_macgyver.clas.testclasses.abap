@@ -14,7 +14,7 @@ ENDCLASS.
 CLASS ycl_macgyver_test IMPLEMENTATION.
   METHOD test_email_validation.
     cl_abap_unit_assert=>assert_true( act = NEW ycl_macgyver( )->validate_email( 'thisisavalid@email.com' )
-                                      msg = TEXT-001 ). "
+                                      msg = TEXT-001 ).
   ENDMETHOD.
 
   METHOD test_cpf_validation.
